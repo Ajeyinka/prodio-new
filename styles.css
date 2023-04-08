@@ -2,15 +2,17 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
+
 
 @font-face {
     font-family: 'Graphik';
     src: url(../fonts/Graphik-Font-Family\ \(1\)/GraphikBold.otf);
 }
 
+
+.body{
+    position: relative;
+}
 
 
 section{
@@ -23,6 +25,7 @@ section{
     background-color: transparent;
     padding-inline: 2em;
     padding-block:5em;
+    
   
     
   }
@@ -31,7 +34,7 @@ section{
     section {
         
         padding-inline: 0.5em;
-        padding-block:0.5em;
+        padding-block:1em;
         
         
         
@@ -80,7 +83,7 @@ section{
     font-size: 16px;
     font-family: var(--ff-1);
     scroll-behavior: smooth;
-    
+    overflow-x: hidden;
   }
   button{
     cursor: pointer;
@@ -106,7 +109,7 @@ body{
     font-size: var(--fs-p);
     text-align: left;
     position:relative;
-    
+    overflow-x: hidden;
   }
   
   
@@ -769,7 +772,7 @@ body{
 
 .pro__holder {
         display: flex;
-        overflow-y: scroll;
+        overflow-y: hidden;
         overflow-x: scroll;
         
       
@@ -807,7 +810,7 @@ body{
 
 .prodio__card:hover .pro__card_info {
     display: none;
-    
+    cursor: cell;
  }
 
 
