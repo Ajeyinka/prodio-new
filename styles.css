@@ -10,9 +10,7 @@
 }
 
 
-.body{
-    position: relative;
-}
+
 
 
 section{
@@ -109,7 +107,7 @@ body{
     font-size: var(--fs-p);
     text-align: left;
     position:relative;
-    overflow-x: hidden;
+    
   }
   
   
@@ -768,150 +766,40 @@ body{
 
 
 
-
+.pro_sec{
+    padding-inline: 200px;
+}
 
 .pro__holder {
-        display: flex;
-        overflow-y: hidden;
-        overflow-x: scroll;
+    display: grid;
+    gap:1em;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    overflow-x: auto;
+    
+  }
+
+  .pro__holder::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .pro__holder img {
+    inline-size: 100%;
+    object-fit: cover;
+  }
         
       
       
+
+
+.prodio__card {
+    padding:1em;
+    background: #e7e7e7;
 }
 
-.pro__holder::-webkit-scrollbar {
-    display: none;
-  }
-
-.prodio__card{
-    position: relative;
-    border-radius: 16px;
-    filter: drop-shadow(1px 2px 15px rgba(0,0,0,0.1));
-    margin-right: 20px;
-    
-}
-
-.prodio__card > div {
-
-    position: absolute;
-    bottom: 0px;
-    background: white;
-    border-radius: 0 0 16px 16px;
-    
-
-}
-
-@keyframes example {
-    0%   {transform: translateX(0);}
-    25%  {transform: translateX(0);}
-    100%  {display: none;}
-    
-  }
-
-.prodio__card:hover .pro__card_info {
-    display: none;
-    cursor: cell;
- }
 
 
-.pro__card_info {
-    padding: 30px 20px;
-}
-
-.pro__card_info >h4 {
-    margin-block: 20px;
-    font-size: 22px;
-}
-
-.pro__card_info >p {
-    margin-bottom: 20px;
-}
-
-.pro__sec {
-    margin-block: 6em;
-}
-
-.pro__sec h2 {
-    margin-bottom: 4em;
-    position: relative;
-}
-
-.pro__sec h2::after {
-    content: "Newly launched projects";
-    position: absolute;
-    font-size: 16px;
-    top: 40px;
-    left: 0px;
-    font-family: var(--ff-1);
-    font-weight: 400;
-}
-
-.pro__sec button {
-    padding: 8px 18px;
-    border: 0px;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-@media (max-width:920px) {
-
-    
-
-.prodio__card{
-    position: relative;
-    border-radius: 16px;
-    filter: drop-shadow(1px 2px 15px rgba(0,0,0,0.1));
-    margin-right: 20px;
-}
-
-.prodio__card > div {
-
-    position: absolute;
-    bottom: 0px;
-    background: white;
-    border-radius: 0 0 16px 16px;
-
-}
-
-.pro__card_info {
-    padding: 30px 20px;
-}
-
-.pro__card_info >h4 {
-    margin-block: 20px;
-    font-size: 22px;
-}
-
-.pro__card_info >p {
-    margin-bottom: 20px;
-}
-
-.pro__sec {
-    margin-block: 6em;
-}
-
-.pro__sec h2 {
-    margin-bottom: 3em;
-    position: relative;
-}
-
-.pro__sec h2::after {
-    content: "Newly launched projects";
-    position: absolute;
-    font-size: 14px;
-    top: 70px;
-    left: 0px;
-    font-family: var(--ff-1);
-    font-weight: 400;
-}
-
-.pro__sec button {
-    padding: 8px 18px;
-    border: 0px;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-}
 
 .comm__holder {
     display: flex;
